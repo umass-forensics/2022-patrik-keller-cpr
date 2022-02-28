@@ -149,9 +149,11 @@ open Cmdliner
 
 let main_t = Term.(const run_all $ activations $ cores |> term_result)
 
+(*
 let info =
   let doc = "simulate protocols on iGraph networks" in
   Term.info ~doc ~version "igraph"
 ;;
 
 let () = Term.exit @@ Term.eval (main_t, info)
+*)

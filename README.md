@@ -213,3 +213,13 @@ requires modeling of the DAA or simplifying assumptions (e.g. messages
 reordering succeeds with fixed probability).
 
 **To do:** Consider simulating DAAs.
+
+## OSX build instructions
+
+```bash
+brew install dune ocamlbuild opam
+opam init
+eval $(opam env --switch=default)
+opam install pythonlib progress parany ppx_fields_conv ppx_show ezxmlm ppx_variants_conv owl-base bos cmdliner angstrom
+make # binary appears in _build/default/ocaml/gym
+```
